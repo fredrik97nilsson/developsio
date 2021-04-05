@@ -1,8 +1,10 @@
+import LoginPage from "./Components/LoginPage/LoginPage";
+import StartPage from './Components/StartPage/StartPage';
 
 function App() {
   return (
     <div className="App">
-      
+        <StartPage/>
     </div>
   );
 }
