@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CreateProfile from '../CreateProfile/CreateProfile';
+import UserPage from '../UserPage/UserPage';
 
 function StartPage() {
     return(
         
 
         <div>
-            <CreateProfile/>
+            <UserPage/>
         </div>
 
         
