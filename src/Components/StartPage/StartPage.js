@@ -6,7 +6,7 @@ function StartPage() {
     return(
         
 
-        <div className={classes.StartPageHeader}>
+        <div>
             <CreateProfile/>
         </div>
 

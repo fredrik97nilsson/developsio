@@ -6,3 +6,5 @@ function CreateProfile() {
         </div>
     )
 }
+
+export default CreateProfile;
