@@ -11,6 +11,7 @@ function App() {
         Och oj vad kul de hade!?!?!?!?
       </h2>
       <h1>Adam was here</h1>
+      <h1>Sex laxar i en laxask</h1>
       <h2>Det är kul att klättra i träd</h2>
       <h1>Fanny och Leon was here!!!</h1>
       <h1>Varför gick bajskorven till polisen?</h1>
