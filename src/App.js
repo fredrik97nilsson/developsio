@@ -7,6 +7,9 @@ function App() {
       <h2>
         Och oj vad kul de hade!?!?!?!?
       </h2>
+      <h1>Adam was here</h1>
+      <h2>Det är kul att klättra i träd</h2>
+      <h1>Fanny och Leon was here!!!</h1>
     </div>
   );
 }
