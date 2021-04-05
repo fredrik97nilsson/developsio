@@ -14,7 +14,7 @@ function App() {
       <h2>Det är kul att klättra i träd</h2>
       <h1>Fanny och Leon was here!!!</h1>
       <h1>Varför gick bajskorven till polisen?</h1>
-      <p>Den kände sig utpressad</p>
+      <p style={{fontStyle: "italic"}}>Den kände sig utpressad</p>
     </div>
   );
 }
