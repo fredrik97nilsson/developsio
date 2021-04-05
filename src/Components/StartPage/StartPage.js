@@ -1,13 +1,13 @@
 import React from 'react';
 
-import UserPage from '../UserPage/UserPage';
+import AdminPage from '../AdminPage/AdminPage';
 
 function StartPage() {
     return(
         
 
         <div>
-            <UserPage/>
+            <AdminPage/>
         </div>
 
         
