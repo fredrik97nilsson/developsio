@@ -1,9 +1,11 @@
+import LoginPage from "./Components/LoginPage/LoginPage";
+import StartPage from './Components/StartPage/StartPage';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>stellis</h1>
+        <StartPage/>
     </div>
   );
 }
