@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './InputField.module.css';
+//import classes from './InputField.module.css';
 
 /*const inputField = (props) => (
     <input className={classes.InputField} placeholder={props.placeholder}>{props.children}</input>
@@ -8,12 +8,12 @@ import classes from './InputField.module.css';
 
 function InputField(props) {
     const handleChange = (event) => {
-        props.changed(event.target.value);
+        props.handleChanged(event.target);
     }
 
     return(
         <div>
-            <input value={props.value} onChange={handleChange} />
+            <input name={props.name} value={props.value} onChange={handleChange} />
         </div>
     );
 }
