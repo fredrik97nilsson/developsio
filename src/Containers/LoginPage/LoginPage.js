@@ -13,6 +13,7 @@ function LoginPage() {
     zip: '',
     town: '',
     phone: ''});
+
     const [users, setUsers] = useState([]);
 
     const handleChange = target =>  {
@@ -24,28 +25,39 @@ function LoginPage() {
     };
 
     const handleSubmit = () => {
-
+        setUsers((prev)=>{
+           return [...prev, stateObject]
+        });
+        setStateObject({
+            firstName: '',
+            lastName: '',
+            email: '',
+            skype: '',
+            adress: '',
+            zip: '',
+            town: '',
+            phone: ''
+        });
     }
 
     return (
             <div>
-                <CreateProfile objekt={stateObject} handleChanged={handleChange} />
-                <h3>Namn</h3><br/>
-                <h3>{stateObject.firstName}</h3>
-                <h3>Efternamn</h3><br/>
-                <h3>{stateObject.lastName}</h3>
-                <h3>Email</h3><br/>
-                <h3>{stateObject.email}</h3>
-                <h3>Skype</h3><br/>
-                <h3>{stateObject.skype}</h3>
-                <h3>Adress</h3><br/>
-                <h3>{stateObject.adress}</h3>
-                <h3>Zip</h3><br/>
-                <h3>{stateObject.zip}</h3>
-                <h3>Town</h3><br/>
-                <h3>{stateObject.town}</h3>
-                <h3>Phone</h3><br/>
-                <h3>{stateObject.phone}</h3>
+                <CreateProfile objekt={stateObject} handleChanged={handleChange} onClick={handleSubmit}/>
+
+                {users.map((user, index)=>(
+                    <div>
+                        <h3>User {index+1}</h3>
+                        <h3>Namn: {user.firstName}</h3>
+                        <h3>Efternamn: {user.lastName}</h3>
+                        <h3>Email: {user.email}</h3>
+                        <h3>Skype: {user.skype}</h3>
+                        <h3>Adress: {user.adress}</h3>
+                        <h3>Zip: {user.zip}</h3>
+                        <h3>Town. {user.town}</h3>
+                        <h3>Phone: {user.phone}</h3>
+                    </div>    
+                ))}
+                
             </div>
     );
 }

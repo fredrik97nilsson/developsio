@@ -7,7 +7,7 @@ function CreateProfile(props) {
 
     return(
         <div>
-            <form onSubmit> 
+             
             <b>First name</b><br/>
             <InputField name='firstName' value={props.objekt.firstName} handleChanged={props.handleChanged}/>
             <b>Last name</b><br/>
@@ -24,8 +24,7 @@ function CreateProfile(props) {
             <InputField name='town' value={props.objekt.town} handleChanged={props.handleChanged}/>
             <b>Phone</b><br/>
             <InputField name='phone' value={props.objekt.phone} handleChanged={props.handleChanged}/>
-            <button type='submit'>Create profile</button>
-            </form>
+            <button onClick={props.onClick}>Create profile</button>
         </div>
     )
 }
